@@ -1,0 +1,49 @@
+.homepage-base {
+    height: 100%;
+    background-image: url(../assets/landing.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.homepage-landing {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    backdrop-filter: blur(5px) brightness(70%);
+}
+
+.homepage-button {
+    background-color: green;
+    height: 48px;
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 106, 0);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    place-content: center;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    transition: background-color ease 200ms;
+}
+
+.homepage-button:hover {
+    background-color: rgb(0, 92, 0);
+}
+
+.homepage-button:active {
+    background-color: rgb(0, 122, 0);
+}
+
+.homepage-button:visited {
+    color: white;
+}
+
+.homepage-button[disabled] {
+    background-color: gray;
+    border: gray;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
