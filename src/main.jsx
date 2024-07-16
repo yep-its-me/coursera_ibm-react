@@ -11,7 +11,7 @@ import { Cart } from "./pages/ShoppingCart";
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename="/coursera_ibm-react/">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="products" element={<Products />} />
